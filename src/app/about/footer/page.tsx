@@ -1,0 +1,16 @@
+"use client"
+
+import { useRouter } from 'next/navigation'
+import React from 'react'
+import Link from 'next/link'
+const About = ()=>{
+  const router = useRouter();
+  return (
+    <div>
+    <h1>This is a about page</h1>
+    <button onClick={()=>router.push('/')}>return to homepage</button>
+    </div>
+  )
+}
+
+export default About
